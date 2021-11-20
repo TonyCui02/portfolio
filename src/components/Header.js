@@ -1,20 +1,17 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import TypedText from './TypedText';
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
-    <div className="logo">
-      <span className="icon fa-diamond"></span>
-    </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>Tony Cui</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
+          Penultimate year Software Engineering Student at UOA
           <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          <br />
+          <b> <TypedText/> </b>
         </p>
       </div>
     </div>
@@ -23,28 +20,28 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('intro')
-            }}
-          >
-            Intro
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Work
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
               props.onOpenArticle('about')
             }}
           >
             About
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('art')
+            }}
+          >
+            Art
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('projects')
+            }}
+          >
+            Projects
           </button>
         </li>
         <li>
