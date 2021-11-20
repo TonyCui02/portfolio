@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/prof.jpg'
-import ArtSwiper from './ArtSwiper'
+import SimpleSlider from './ArtGallery'
 
 class Main extends React.Component {
   render() {
@@ -31,12 +31,8 @@ class Main extends React.Component {
         >
           <h2 className="major">Art</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+          <SimpleSlider/>
           </span>
-          <p>
-            Will be adding some of my doodles soon!
-          </p>
-          <ArtSwiper/>
           {close}
         </article>
 
