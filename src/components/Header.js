@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import TypedText from './TypedText';
+import TypedText from './TypedText'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -11,7 +11,10 @@ const Header = props => (
           Penultimate year Software Engineering Student at UOA
           <br />
           <br />
-          <b> <TypedText/> </b>
+          <b>
+            {' '}
+            <TypedText />{' '}
+          </b>
         </p>
       </div>
     </div>

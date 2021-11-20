@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/prof.jpg'
+import ArtSwiper from './ArtSwiper'
 
 class Main extends React.Component {
   render() {
@@ -36,6 +36,7 @@ class Main extends React.Component {
           <p>
             Will be adding some of my doodles soon!
           </p>
+          <ArtSwiper/>
           {close}
         </article>
 
