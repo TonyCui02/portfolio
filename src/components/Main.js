@@ -23,13 +23,30 @@ class Main extends React.Component {
       >
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="art"
+          className={`${this.props.article === 'art' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Art</h2>
+          <span className="image main">
+            <img src={pic02} alt="" />
+          </span>
+          <p>
+            Will be adding some of my doodles soon!
+          </p>
+          {close}
+        </article>
+
+        <article
+          id="projects"
+          className={`${this.props.article === 'projects' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Projects</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
@@ -82,56 +99,8 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" className="special" />
-              </li>
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
-            </ul>
-          </form>
-          <ul className="icons">
-            <li>
-              <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
-              >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
-                className="icon fa-github"
-              >
-                <span className="label">GitHub</span>
-              </a>
-            </li>
-          </ul>
+          <h3>My email: </h3>
+          <a href="mailto: Tonycui02@gmail.com">Tonycui02@gmail.com</a>
           {close}
         </article>
       </div>
