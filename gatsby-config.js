@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Tony Cui',
     author: 'Tony Cui',
-    description: 'Tony Cui\'s Portfolio',
+    description: "Tony Cui's Portfolio",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
